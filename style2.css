@@ -1,0 +1,47 @@
+body {
+  background-image: url("tree.jpg");
+  background-size: cover;        
+  background-repeat: no-repeat;  
+  background-position: center;   
+}
+
+.month-card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
+
+.card-header {
+    background-color: #212529 !important;
+    color: #fff !important;
+    border-radius: 12px 12px 0 0 !important;
+    font-size: 1.1rem;
+}
+
+.table thead th {
+    background-color: #f1f3f5;
+    font-size: 0.7rem;
+    color: #6c757d;
+    border-bottom: none;
+}
+
+.table td {
+    padding: 10px 0;
+    font-size: 0.9rem;
+    border: none;
+}
+
+/* Red Color for Sundays (The first column in Sun-Sat arrangement) */
+.table td:first-child, 
+.table th:first-child {
+    color: #dc3545 !important;
+    font-weight: bold;
+}
+
+/* Red Color for Holidays */
+.holiday-day {
+    color: #dc3545 !important;
+    font-weight: bold;
+    background-color: rgba(220, 53, 69, 0.1);
+    border-radius: 4px;
+}
