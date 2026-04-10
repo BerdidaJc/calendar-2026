@@ -18,6 +18,49 @@
         </div>
 </div>
 
+<div class="container">
+  <p class="bottom-text" style="color: rgba(235, 235, 235, 1.00); font-weight:italic; font-size:30px; font-family:sans serif;">REGULAR HOLIDAYS AND SPECIAL (NON-WORKING) DAY<br>
+ 
+• JANUARY 1 THURSDAY: New Year's Day
+ <br>
+• FEBRUARY 17 TUESDAY - Chinese New Year
+<br>
+• FEBRUARY 25 WEDNESDAY - EDSA People Power Revolution Anniversary
+ <br>
+• APRIL 2 THURSDAY - Maundy Thursday
+<br>
+• APRIL 3 FRIDAY - Good Friday
+<br>
+• APRIL 4 SATURDAY - Black Saturday
+<br>
+• APRIL 9 THURSDAY - Araw ng Kagitingan
+ <br>
+•MAY 1 FRIDAY - Labor Day
+ <br>
+• JUNE 12 FRIDAY - Independence Day
+ <br>
+• AUGUST 21 FRIDAY - Ninoy Aquino Day
+<br>
+• AUGUST 31 MONDAY - National Heroes Day
+ <br>
+• NOVEMBER 1 SUNDAY - All Saints' Day
+<br>
+•  NOVEMBER 2 MONDAY - All Souls' Day
+<br>
+•  NOVEMBER 30 MONDAY - Bonifacio Day
+<br>
+•  DECEMBER 24 THURSDAY - Christmas Eve
+<br>
+• DECEMBER 25 FRIDAY - Christmas Day
+<br>
+• DECEMBER 30 WEDNESDAY - Rizal Day
+<br>
+• DECEMBER 31 THURSDAY - New Year's Eve
+
+
+</p>
+</div>
+
 <script>
     // Configuration: Add your custom holidays here
     const holidays2026 = [
@@ -52,9 +95,11 @@
                                     </tr>
                                 </thead>
                                 <tbody><tr>`;
+                                
 
             // Leading empty cells
             for (let i = 0; i < firstDay; i++) html += '<td></td>';
+  
 
             for (let day = 1; day <= daysInMonth; day++) {
                 const dateStr = `${year}-${String(monthIndex + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
@@ -75,6 +120,8 @@
     }
 
     initCalendar();
+    
+   
 </script>
 </body>
 </html>
